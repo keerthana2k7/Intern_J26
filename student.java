@@ -39,14 +39,4 @@ class Student {
         System.out.println("Gender: " + topper.gender);
         System.out.println("Marks: " + topper.marks);
     }
-
-
-    public int marks() {
-        return marks;
-    }
-
-    public String name() {
-        return name;
-    }
-
 }
