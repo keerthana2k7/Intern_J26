@@ -32,8 +32,6 @@ class Student {
         Student[] students = {s1, s2, s3, s4};
 
         Student topper = findTopper(students);
-
-        System.out.println("Topper Details:");
         System.out.println("Name: " + topper.name);
         System.out.println("Age: " + topper.age);
         System.out.println("Gender: " + topper.gender);
