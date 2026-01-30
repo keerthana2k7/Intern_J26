@@ -1,11 +1,9 @@
 package project;
 import project.enums.SplitType;
-import project.model.Expenses;
 import project.model.Users;
 import project.model.Group;
-import project.service.EqualSplit;
-import project.service.ExactSplit;
-import project.service.ExpenseService;
+import project.strategy.EqualSplit;
+import project.strategy.ExactSplit;
 
 import java.util.Scanner;
 
@@ -25,17 +23,17 @@ public class Main {
         System.out.println("Enter split method number:\n 1. Equal Split 2. Exact Split");
         int choice = sc.nextInt();
 
-        ExactSplit exactSplit=new ExactSplit();
-        EqualSplit equalSplit=new EqualSplit();
+        /*ExactSplit exactSplit=new ExactSplit();
+        EqualSplit equalSplit=new EqualSplit();*/
 
         while(true) {
 
             switch(choice) {
                 case 1:
-                    equalSplit.splitExpense(SplitType.EQUAL);
+                    //equalSplit.splitExpense(SplitType.EQUAL);
                     break;
                 case 2:
-                    exactSplit.splitExpense(SplitType.EXACT);
+                    //exactSplit.splitExpense(SplitType.EXACT);
                     break;
                 default:
                     System.out.println("Wrong choice");
