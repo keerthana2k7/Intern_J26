@@ -24,4 +24,7 @@ public class Users {
     public double getBalance_amount() {
             return balance_amount;
     }
+    public void setName_user(String name) { this.name_user = name; }
+    public void setId_user(int id) { this.id_user = id; }
+
 }

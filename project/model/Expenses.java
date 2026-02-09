@@ -11,7 +11,8 @@ public class Expenses {
     private HashMap<Users, Double> expenses;
     private double numberOfUsers;
 
-    public Expenses(/*,SplitType splitType*/) {
+    public Expenses(int id_expense, Users paid_user, int group_id,
+                    double amount, SplitType splitType) {
         this.id_expense = id_expense;
         this.paid_user = paid_user;
         this.group_id = group_id;
@@ -19,6 +20,7 @@ public class Expenses {
         this.splitType = splitType;
         this.expenses = new HashMap<>();
     }
+
     public int getId_expense() {
         return id_expense;
     }
